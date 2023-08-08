@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.berka'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+     implementation 'org.postgresql:postgresql:42.6.0'
+    implementation 'org.hibernate:hibernate-core:5.6.15.Final'
+    implementation 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
